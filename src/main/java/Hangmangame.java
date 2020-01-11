@@ -14,7 +14,6 @@ public class Hangmangame {
             String guess = letter.next();
             if (hang(guess)) {
                 System.out.println("Correct! You win! The word was " + word);
-                System.out.println("Do you want to play again ?");
                 break;
             }
         }
@@ -25,7 +24,6 @@ public class Hangmangame {
         for (int i = 0; i < word.length(); i++) {
             if (guess.equals(word)){
                 return true;
-            }else{
             }
             if (word.charAt(i) == guess.charAt(0)) {
                 newletter += guess.charAt(0);
@@ -129,7 +127,6 @@ public class Hangmangame {
             System.out.println("   |          / \\ ");
             System.out.println("___|___      /   \\");
             System.out.println("GAME OVER! The word was " + word);
-            System.out.println("Do you want to play again ?");
 
         }
     }
