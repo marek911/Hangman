@@ -39,7 +39,7 @@ public class Hangmangame {
             return true;
         }else
             return false;
-          
+
         }
 
 
